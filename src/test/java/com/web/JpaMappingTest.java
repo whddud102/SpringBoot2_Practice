@@ -1,7 +1,7 @@
 package com.web;
 
 import com.web.domain.Board;
-import com.web.domain.BoardType;
+import com.web.domain.enums.BoardType;
 import com.web.domain.User;
 import com.web.repository.BoardRepository;
 import com.web.repository.UserRepository;

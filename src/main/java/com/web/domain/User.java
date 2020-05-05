@@ -1,5 +1,6 @@
 package com.web.domain;
 
+import com.web.domain.enums.SocialType;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +28,13 @@ public class User implements Serializable {
 
     @Column
     private String email;
-
+    
+    @Column
+    private String principal;   // OAuth2 인증으로 제공 받은 키 값
+    
+    @Column
+    private SocialType socialType;      // 어떤 소셜 미디어로 인증 받았는지 여부
+    
     @Column
     private LocalDateTime createdDate;
 

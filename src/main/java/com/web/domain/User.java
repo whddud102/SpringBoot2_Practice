@@ -42,10 +42,12 @@ public class User implements Serializable {
     private LocalDateTime updateDate;
 
     @Builder
-    public User(String name, String password, String email, LocalDateTime createdDate, LocalDateTime updateDate) {
+    public User(String name, String password, String email, String principal, SocialType socialType, LocalDateTime createdDate, LocalDateTime updateDate) {
         this.name = name;
         this.password = password;
         this.email = email;
+        this.principal = principal;
+        this.socialType = socialType;
         this.createdDate = createdDate;
         this.updateDate = updateDate;
     }

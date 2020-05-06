@@ -43,6 +43,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {  // 설정을
 
         http.authorizeRequests()
                 .antMatchers("/", "/login/**", "/css/**", "/images/**", "/js/**", "/console/**").permitAll()
+                .antMatchers("/facebook").hasAnyAuthority(FACEBOOK.getRoleType())
+                .antMatchers("/google").hasAuthority(GOOGLE.getRoleType())
+                .antMatchers("/kakao").hasAuthority(KAKAO.getRoleType())
                 .anyRequest().authenticated()
                 .and()
                 .headers().frameOptions().disable()

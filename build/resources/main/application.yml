@@ -1,20 +1,29 @@
-spring :
-  security :
-    oauth2 :
-      client :
-        registration :
-          google :
-            client-id : 885540110800-u8go7ekj3moen47jpmoc7f6ictgn3iep.apps.googleusercontent.com
-            client-secret : yQflEla38EG87pdD68GcJriB
-          facebook :
-            client-id : 231760694931368
-            client-secret : b656fb676b2ee90db286073fb870d494
-
-custom :
-  oauth2 :
-    kakao :
-      client-id : 428624
-
-
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+      path: /console
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 885540110800-u8go7ekj3moen47jpmoc7f6ictgn3iep.apps.googleusercontent.com
+            client-secret: yQflEla38EG87pdD68GcJriB
+          facebook:
+            client-id: 231760694931368
+            client-secret: b656fb676b2ee90db286073fb870d494
+custom:
+  oauth2:
+    kakao:
+      client-id: 32160ca08f9aef0faeec5288da975da8
 
 

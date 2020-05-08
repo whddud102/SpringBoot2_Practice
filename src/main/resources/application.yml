@@ -1,9 +1,4 @@
 spring:
-  #  datasource:
-  #    url: jdbc:mysql://
-  #    username:
-  #    password:
-  #    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
@@ -21,14 +16,14 @@ spring:
       client:
         registration:
           google:
-            client-id: 885540110800-u8go7ekj3moen47jpmoc7f6ictgn3iep.apps.googleusercontent.com
-            client-secret: yQflEla38EG87pdD68GcJriB
+            client-id:
+            client-secret:
           facebook:
-            client-id: 231760694931368
-            client-secret: b656fb676b2ee90db286073fb870d494
+            client-id:
+            client-secret:
 custom:
   oauth2:
     kakao:
-      client-id: 428624
+      client-id:
 
 

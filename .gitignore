@@ -1,3 +1,7 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+/out
 
 # Created by https://www.gitignore.io/api/java,windows,intellij
 # Edit at https://www.gitignore.io/?templates=java,windows,intellij

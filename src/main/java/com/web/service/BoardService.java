@@ -22,7 +22,7 @@ public class BoardService {
         return boardRepository.findAll(pageable);
     }
 
-    public Board findByIdx(Long idx) {
+    public Board findBoardByIdx(Long idx) {
         return boardRepository.findById(idx).orElse(new Board());
     }
 }

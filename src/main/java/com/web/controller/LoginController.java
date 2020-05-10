@@ -15,6 +15,8 @@ public class LoginController {
 
     @GetMapping("/loginSuccess")
     public String loginComplete(@SocialUser User user) {
+        System.out.println(user.getSocialType().getValue() + " Login Success!");
+
         return "redirect:/board/list";
     }
 }

@@ -17,7 +17,7 @@ public enum CustomOAuth2Provider {
             builder.userNameAttributeName("id");
             builder.clientName("Kakao");
             return  builder;
-        };
+        }
     };
 
     private static final String DEFAULT_LOGIN_REDIRECT_URL = "{baseUrl}/login/oauth2/code/{registrationId}";
@@ -31,4 +31,5 @@ public enum CustomOAuth2Provider {
     }
 
     public abstract ClientRegistration.Builder getBuilder(String registrationId);
+
 }

@@ -36,7 +36,7 @@ public class Board implements Serializable {
     private LocalDateTime createdDate;
 
     @Column
-    private LocalDateTime updateDate;
+    private LocalDateTime updatedDate;
 
     @OneToOne(fetch = FetchType.LAZY)
     private User user;
@@ -48,7 +48,7 @@ public class Board implements Serializable {
         this.content = content;
         this.boardType = boardType;
         this.createdDate = createdDate;
-        this.updateDate = updateDate;
+        this.updatedDate = updateDate;
         this.user = user;
     }
 }

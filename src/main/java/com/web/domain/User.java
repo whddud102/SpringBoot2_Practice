@@ -39,7 +39,7 @@ public class User implements Serializable {
     private LocalDateTime createdDate;
 
     @Column
-    private LocalDateTime updateDate;
+    private LocalDateTime updatedDate;
 
     @Builder
     public User(String name, String password, String email, String principal, SocialType socialType, LocalDateTime createdDate, LocalDateTime updateDate) {
@@ -49,7 +49,7 @@ public class User implements Serializable {
         this.principal = principal;
         this.socialType = socialType;
         this.createdDate = createdDate;
-        this.updateDate = updateDate;
+        this.updatedDate = updateDate;
     }
 
 

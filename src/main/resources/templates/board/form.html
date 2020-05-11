@@ -95,6 +95,10 @@
             type : "POST",
             data : jsonData,
             contentType : "application/json",
+            // 헤더에 인증 정보를 담도록 수정
+            headers : {
+                "Authorization" : Basic + btoa("havi" + ":" + "test")
+            },
             dataType : "json",
             success : function() {
                 alert('저장 성공!');

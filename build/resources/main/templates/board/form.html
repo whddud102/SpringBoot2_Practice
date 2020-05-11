@@ -138,23 +138,17 @@
        });
 
         $('#delete').click(function() {
-
-
-        $.ajax({
-            url : "http://localhost:8081/api/boards/" + $('#board_idx').val(),
-            type : "DELETE",
-            data : jsonData,
-            contentType : "application/json",
-            dataType : "json",
-            success : function() {
-                alert('삭제 성공!');
-                location.href = '/board/list';
-
-            },
-            error : function() {
-                alert('삭제 실패!');
-            }
-         });
+            $.ajax({
+                url : "http://localhost:8081/api/boards/" + $('#board_idx').val(),
+                type : "DELETE",
+                success : function() {
+                    alert('삭제 성공!');
+                    location.href = '/board/list';
+                },
+                error : function() {
+                    alert('수정 실패!');
+                }
+             });
        });
 
 </script>
